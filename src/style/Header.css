@@ -1,0 +1,81 @@
+/* header */
+/* Nav bar */
+.customNav {
+    padding: 0;
+    background: var(--colour2) !important;
+}
+
+.navContain {
+    padding: 0 !important;
+}
+
+/* Portfolio header */
+.navbar-brand {
+    background: var(--colour3) !important;
+    color: var(--colour2) !important;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    padding: 2px 10px 2px 30px !important;
+    margin: 10px 0px !important;
+}
+
+.navbar-brand:hover {
+    background: var(--colour4) !important;
+    color: var(--colour2) !important;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset !important;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset !important;
+}
+
+/* menu */
+.navbar-nav { 
+    margin: 0 10px !important;
+}
+
+.nav-item {
+    margin: 5px !important;
+}
+
+nav a {
+    font-weight: bolder !important;
+}
+
+nav a:hover,
+.dropdown-item a:hover {
+    background: var(--colour3) !important;
+    color: var(--colour2) !important;
+    border-radius: 0 !important;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset !important;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background: var(--colour3) !important;
+    color: var(--colour2) !important;
+    font-weight: bolder !important;
+    border-radius: 0 !important;
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+.dropdown-menu {
+    --bs-dropdown-bg: var(--colour2) !important;
+    border-radius: 0 !important;
+}
+
+.navbar-toggler {
+    margin-right: 30px !important;
+    border-radius: 0 !important;
+}
+
+/* media queries */
+@media only screen and (max-width: 880px) {
+/* nav bar */
+    .nav-link {
+        padding: 5px !important;
+        display: inline-block !important;
+    } 
+}

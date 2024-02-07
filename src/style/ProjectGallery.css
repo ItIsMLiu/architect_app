@@ -1,0 +1,51 @@
+.allContent {
+    width: 95% !important;
+}
+
+.secTitleContain {
+    text-align: right !important;
+    padding-right: 50px !important;
+}
+
+.section-block {
+    border-left: solid var(--colour1);
+    margin: 20px 0px 20px 0px !important;
+}
+
+.card {
+    padding: 10px !important;
+    border: none !important;
+}
+
+/* Add scroll margin to avoid header covering part of the section, reference link in README */
+#work, #skills, #about-contact, #horiseon, #prework, #mini, #demo, #portfolio {
+    scroll-margin-top: 5rem !important;
+} 
+
+/* Work section */
+.card-img {
+    border-radius: 0px !important;
+    filter: brightness(50%) !important;
+    border-bottom: solid 5px var(--colour1) !important;
+    transition: all 0.5s ease-out !important;
+}
+
+/* when image link is hovered, change property for img element */
+.img-link:hover {
+    .card-img {
+        filter: none !important;
+    }
+}
+
+.card-img-overlay {
+    padding: 10px !important;
+}
+
+.subheading {
+    background: var(--colour3) !important;
+    display: inline-block !important;
+    padding: 10px !important;
+    position: absolute !important;
+    bottom: 30px !important;
+    color: var(--colour2) !important;
+}
