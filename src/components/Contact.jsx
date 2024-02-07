@@ -12,10 +12,10 @@ function Contact() {
 
             <div className="row">
               <div className="card col-lg-12 col-md-12 col-sm-12">
-                <p>Have a project in mind? We're here to assist you! Don't hesitate to send us a message using the form below or email us at xxxxxx@outlook.com. We usually respond within 1 to 12 hours, but occasionally it may take up to 24 hours. Thank you for your interest!
+                <p>Have a project in mind? We're here to assist you! Don't hesitate to send us a message using the form below or contact details in the Info section. Thank you for your interest!
                 </p>
                 <br></br>
-                <h5 className="card-title" id="git">Contact Info:</h5>
+                <h5 className="card-title" id="git">Info:</h5>
                 <ul className="nav nav-fill nav-underline">
                   <li className="nav-item">
                     <a className="nav-link icon-link" href="mailto:xxxx@outlook.com">
@@ -40,7 +40,7 @@ function Contact() {
             </div>
        
             <div className="row">
-              <h5 className="card-title">Contact Form:</h5>
+              <h5 className="card-title">Form:</h5>
               <form action="https://getform.io/f/e05fc353-4d77-4ad4-84f0-82f69fbd062d" method="POST">
                 <div class="mb-3">
                   <label for="name" class="form-label">Name:</label>

@@ -9,11 +9,11 @@ function Header() {
     <nav className="navbar sticky-top navbar-expand-lg customNav">
       <div className="container-fluid navContain">
         <NavLink 
-          to="/react-portfolio"
+          to="/"
           end
           className='navbar-brand' 
         >
-          Portfolio
+          <i>PinUpStudio</i>
         </NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@ function Header() {
           <ul className="navbar-nav nav-pills justify-content-end">
             <li className="nav-item">
               <NavLink 
-                to="/react-portfolio/projectgallery"
+                to="/architecture-app/services"
                 end
                 className={({ isActive }) =>
                   isActive ? 'nav-link active' : 'nav-link'
@@ -33,7 +33,7 @@ function Header() {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/react-portfolio/projectgallery"
+                to="/architecture-app/inspiration"
                 end
                 className={({ isActive }) =>
                   isActive ? 'nav-link active' : 'nav-link'
@@ -44,7 +44,7 @@ function Header() {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/react-portfolio/projectgallery"
+                to="/architecture-app/about"
                 end
                 className={({ isActive }) =>
                   isActive ? 'nav-link active' : 'nav-link'
@@ -55,7 +55,7 @@ function Header() {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/react-portfolio/contact"
+                to="/architecture-app/contact"
                 end
                 className={({ isActive }) =>
                   isActive ? 'nav-link active' : 'nav-link'
