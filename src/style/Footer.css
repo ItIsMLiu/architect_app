@@ -11,8 +11,8 @@ footer .card {
     color: var(--colour2) !important;
 }
 
-/* card 1 button */
-.btn-primary {
+
+footer .btn-primary {
     background-color: var(--colour3) !important;
     border: var(--colour3) !important;
     border-radius: 0 !important;
@@ -30,7 +30,6 @@ footer .btn {
     margin: 0px !important;
 }
 
-/* card 2 list group items */
 footer .list-group-item {
     background: none !important;
     border: none !important;
@@ -44,6 +43,8 @@ footer .list-group-item a {
 footer .list-group-item a:hover {
     border-bottom: solid var(--colour2) 2px !important;
 }
+
+
 
 @media only screen and (max-width: 992px) {
     footer .btn {

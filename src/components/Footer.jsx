@@ -11,7 +11,6 @@ function Footer() {
                     <div className="card">
                         <div className="card-body">
                             <h5 className="card-title">Pin Up Studio</h5>
-                            <p className="card-text">Design by Qualified Architect</p>
                             <a href="mailto:xxxx@outlook.com" className="btn btn-primary">Email Now!</a>
                         </div>
                     </div>
