@@ -1,0 +1,7 @@
+#project a {
+    color: var(--colour2) !important;
+}
+
+#project a:hover {
+    text-decoration-color: var(--colour2)!important;
+}

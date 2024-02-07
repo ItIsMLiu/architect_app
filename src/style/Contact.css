@@ -1,0 +1,24 @@
+.nav-fill .nav-item {
+    text-align: left !important;
+    flex: none !important;
+}
+
+.nav-underline>.nav-item>a {
+    color: var(--colour1) !important;
+}
+
+svg {
+   margin-right: 5px !important; 
+}
+
+#contact .btn-primary {
+    background-color: var(--colour3) !important;
+    border: var(--colour3) !important;
+    border-radius: 0 !important;
+    position: relative !important;
+    bottom: 0px !important;
+    left: -30px !important;
+    --bs-btn-active-color: var(--colour3) !important;
+    --bs-btn-active-bg: var(--colour2) !important;
+    --bs-btn-active-border-color: var(--colour2) !important;
+}

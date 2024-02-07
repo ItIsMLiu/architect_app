@@ -1,0 +1,50 @@
+
+/*-------------------------------------*/
+/* Global styles */
+* {
+    box-sizing: border-box !important;
+}
+  
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+  line-height: 1.5 !important;
+  color: var(--colour1) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 !important;
+}
+
+p {
+  margin: 0 !important;
+}
+
+/*-------------------------------------*/
+/* general */
+/* colours */
+:root {
+  --colour1: #5A554E;
+  --colour2: #EBE9E4;
+  --colour3: #8a6961;
+  --colour4: #6f544e;
+}
+
+/* All buttons */
+.btn-primary:hover, .btn-primary:active {
+  background: var(--colour4);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset !important;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset !important;
+}
+
+button a {
+  color: var(--colour2) !important;
+  text-decoration: none !important;
+}
+
+button a:active {
+  color: var(--colour3) !important;
+}
+  
