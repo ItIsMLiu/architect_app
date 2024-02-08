@@ -12,48 +12,28 @@ function Contactmodal () {
   return (
     <>
         <Button variant="primary" onClick={handleShow}>
-        Contact US
+        Contact Us
          </Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Contact Us</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Name</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Name"
-                autoFocus
-              />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Email"
-                autoFocus
-              />
-            </Form.Group>
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows={3} 
-              placeholder="Tell us about you vision..."/>
-            </Form.Group>
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
+        <Form action="https://getform.io/f/e05fc353-4d77-4ad4-84f0-82f69fbd062d" method="POST">
+                <div class="mb-3">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Name:"></input>
+                </div>
+                <div class="mb-3">
+                  <input type="email" name="email" class="form-control" id="email" placeholder="Email:"aria-describedby="emailHelp"></input>
+                </div>
+                <div class="mb-3">
+                  <textarea type="text" name="message" class="form-control" id="message" placeholder="Tell us your vision..."></textarea>
+                </div>
+          <Button variant="primary" type="submit" onClick={handleClose}>
             Send Message
           </Button>
-        </Modal.Footer>
+              </Form>
+        </Modal.Body>
       </Modal>
     </>
   );
