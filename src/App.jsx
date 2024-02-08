@@ -7,9 +7,11 @@ import Home from "./components/Home.jsx"
 import Services from './components/Services.jsx';
 import About from './components/About.jsx';
 import Inspiration from "./components/inspiration.jsx"
+import Modal from "./components/Modal.jsx"
 import Footer from "./components/Footer.jsx"
 
 import "./style/Global.css"
+import Contactmodal from './components/Modal.jsx';
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
       <Route path="/architecture-app/about" element={<About />} />
       <Route path="/architecture-app/contact" element={<Contact />} />
     </Routes>
+    <Contactmodal />
     <Footer />
   </Router>
   )
