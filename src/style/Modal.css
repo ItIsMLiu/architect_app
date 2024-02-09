@@ -1,0 +1,8 @@
+Button {
+    background-color: var(--colour3) !important;
+    border: var(--colour3) !important;
+    border-radius: 0 !important;
+    --bs-btn-active-color: var(--colour3) !important;
+    --bs-btn-active-bg: var(--colour2) !important;
+    --bs-btn-active-border-color: var(--colour2) !important;
+}

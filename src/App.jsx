@@ -6,7 +6,7 @@ import Header from "./components/Header.jsx"
 import Home from "./components/Home.jsx"
 import Services from './components/Services.jsx';
 import About from './components/About.jsx';
-import Inspiration from "./components/Inspiration.jsx"
+import Inspiration from "./components/Inspo/AppInspo.jsx";
 import Modal from "./components/Modal.jsx"
 import Footer from "./components/Footer.jsx"
 
@@ -31,4 +31,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
