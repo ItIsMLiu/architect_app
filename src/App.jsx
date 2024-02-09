@@ -7,7 +7,6 @@ import Home from "./components/Home.jsx"
 import Services from './components/Services.jsx';
 import About from './components/About.jsx';
 import Inspiration from "./components/inspiration.jsx"
-import Modal from "./components/Modal.jsx"
 import Footer from "./components/Footer.jsx"
 
 import "./style/Global.css"
