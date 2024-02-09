@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
+import "../style/Modal.css"
+import "../style/Global.css"
 
 function Contactmodal () {
   const [show, setShow] = useState(false);
