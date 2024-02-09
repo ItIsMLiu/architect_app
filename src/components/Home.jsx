@@ -7,9 +7,9 @@ import "../style/Global.css"
 
 const Home = () => (
   <>
-    <div className="container-fluid allContent px-0 mx-0">
+    <div className="container-fluid px-0 mx-0">
       <div className="row">
-        <div className="container-fluid col-lg-12 col-md-12 col-sm-12 text-center pr-0" id="view-services">
+        <div className="container-fluid col-lg-12 col-md-12 col-sm-12 text-center" id="view-services">
           <h3>Partner with Us to Realize Your Vision</h3>
           <NavLink
             to="/architecture-app/services"
