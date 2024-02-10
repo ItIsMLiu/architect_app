@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Architectural",
+        "image": "/service-architectural.jpg",
+        "page": "/architecture-app/services/archservices"
+    },
+    {
+        "id": 2,
+        "title": "Interior",
+        "image": "/service-interior.jpg",
+        "page": "/architecture-app/services/interiorservices"
+    }
+]
