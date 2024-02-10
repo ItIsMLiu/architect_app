@@ -1,0 +1,35 @@
+#serviceOption a {
+    color: var(--colour2) !important;
+}
+
+#serviceOption a:hover {
+    text-decoration-color: var(--colour2)!important;
+}
+
+#serviceOption .card-img {
+    border-radius: 0px;
+    filter: brightness(50%);
+    transition: all 0.5s ease-out;
+    height: 100%;
+    width: auto;
+}
+
+.img-link:hover {
+    .card-img {
+        filter: none !important;
+    }
+}
+
+.card-img-overlay {
+    padding: 10px;
+    border-radius: none !important;
+}
+
+.subheading {
+    background: var(--colour3);
+    display: inline-block;
+    padding: 10px;
+    position: absolute;
+    bottom: 30px;
+    color: var(--colour2);
+}
