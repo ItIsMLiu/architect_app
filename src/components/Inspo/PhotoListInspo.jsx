@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import NoResults from './NoResultsInspo';
+import { NoResults } from './ErrorPages';
 import Photo from './PhotoInspo';
 import '../../style/Inspiration.css';
 

@@ -1,10 +1,10 @@
 // TagInspo.jsx
 import React from 'react';
 import { Outlet, useParams } from 'react-router-dom';
-import Error404 from '../components/Inspo/Error404Inspo';
-import Title from '../components/Inspo/TitleInspo';
-import PhotoContainer from '../components/Inspo/PhotoContainerInspo';
-import { defaultTags } from '../settingsInspo';
+import { Error404 } from './ErrorPages';
+import Title from './TitleInspo';
+import PhotoContainer from './PhotoContainerInspo';
+import { defaultTags } from '../../APISettingsInspo';
 
 const Tag = () => {
   const { tagTerm } = useParams();

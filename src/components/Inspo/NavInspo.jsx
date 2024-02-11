@@ -1,7 +1,7 @@
 // NavInspo.jsx
 import { NavLink } from 'react-router-dom';
-import { defaultTags } from '../../settingsInspo';
-import '../../style/Inspiration.css';
+import { defaultTags } from '../../APISettingsInspo';
+import '../../style/Global.css';
 
 const Nav = () => {
   // Make sure there's no duplicates in defaultTags

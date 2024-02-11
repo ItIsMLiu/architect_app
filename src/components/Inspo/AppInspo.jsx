@@ -1,9 +1,10 @@
+// AppInspo.jsx
 /* eslint-disable import/no-cycle */
 import { Route, Routes } from 'react-router-dom';
-import Tag from '../../routes/TagInspo';
-import Search from '../../routes/SearchInspo';
+import Tag from './TagInspo';
 import Layout from './LayoutInspo';
-import Error404 from './Error404Inspo';
+import Search from './Search';
+import { Error404 } from './ErrorPages';
 
 const App = () => (
   <Routes>
@@ -11,7 +12,7 @@ const App = () => (
       <Route
         index
         element={(
-          <h2>Click one of the tag buttons above or search for whatever you want!</h2>
+          <h3>Click one of the tag buttons above or search for whatever you want!</h3>
         )}
       />
       <Route path="tag" element={<Tag />}>

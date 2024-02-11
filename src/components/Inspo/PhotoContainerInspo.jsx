@@ -7,7 +7,7 @@ import axios from 'axios';
 import {
   apiArgs,
   apiUrl
-} from '../../settingsInspo';
+} from '../../APISettingsInspo';
 import Loading from './LoadingInspo';
 import PhotoList from './PhotoListInspo';
 import '../../style/Inspiration.css';
