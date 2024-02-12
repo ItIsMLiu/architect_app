@@ -19,7 +19,7 @@ const Home = () => (
             }
           >
             <ImageCollage />
-            <button className="btn btn-primary btn-lg" type="button" id="herogit">View Services</button>
+            <button className="btn btn-primary btn-lg mt-2" type="button" id="herogit">View Services</button>
           </NavLink>
 
         </div>
