@@ -1,7 +1,8 @@
 import {
   useEffect,
-  useState
+  useState,
 } from 'react';
+import { useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import {
@@ -11,14 +12,16 @@ import {
 import Loading from './LoadingInspo';
 import PhotoList from './PhotoListInspo';
 import '../../style/Inspiration.css';
+import Title from './TitleInspo';
 
-const PhotoContainer = ({ phrase }) => {
+const PhotoContainer = () => {
   const [photosData, setPhotosData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const { searchTerm } = useParams();
 
   // Replace any plus signs with spaces
-  const humanizedPhrase = phrase.trim().replace(/\+/g, ' ');
+  const humanizedPhrase = searchTerm.trim().replace(/\+/g, ' ');
 
   useEffect(() => {
     setIsLoading(true);
@@ -92,7 +95,7 @@ const PhotoContainer = ({ phrase }) => {
     getPhotos().then(() => {
       setIsLoading(false);
     });
-  }, [humanizedPhrase, phrase]);
+  }, [humanizedPhrase, searchTerm]);
 
   if (isLoading) return <Loading />;
   if (error) {
@@ -104,7 +107,12 @@ const PhotoContainer = ({ phrase }) => {
     );
   }
 
-  return <PhotoList photosData={photosData} />;
+  return (
+    <>
+      <Title phrase={searchTerm} />
+      <PhotoList photosData={photosData} />
+    </>
+  );
 };
 
 PhotoContainer.propTypes = {

@@ -11,7 +11,7 @@ const Nav = () => {
   const tagLinks = uniqueTags.map((tagTerm) => (
     <li key={tagTerm}>
       {/* For the 'to' url, replace any spaces with + in tagTerm */}
-      <NavLink to={`/architecture-app/inspiration/tag/${tagTerm.trim().replace(/\s/g, '+')}`}>
+      <NavLink to={`/architecture-app/inspiration/${tagTerm.trim().replace(/\s/g, '+')}`}>
         {/* Make the tag Title Case */}
         {tagTerm.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase())}
       </NavLink>
