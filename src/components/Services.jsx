@@ -11,12 +11,12 @@ function Services() {
   return <>
     <div className="container-fluid servicesContent">
         <div className="row" >
-            <div className="container-fluid col-lg-12 col-md-12 col-sm-12">
+            <div className="container-fluid col-lg-12 col-md-12 col-sm-12 p-3 text-center">
                 <h1>Services</h1>
                 <p>Explore our architectural and interior services. Click on each option to learn more.</p>
             </div>
-            <div className="container-fluid col-lg-12 col-md-12 col-sm-12">
-                <div className="row">
+            <div className="container-fluid col-lg-12 col-md-12 col-sm-12 p-3">
+                <div className="row p-3">
                     <ServiceOption 
                         title = {services[0].title}
                         image = {services[0].image}
@@ -29,7 +29,7 @@ function Services() {
                     />
                 </div>
             </div>
-            <div className="container-fluid col-lg-12 col-md-12 col-sm-12">
+            <div className="container-fluid col-lg-12 col-md-12 col-sm-12 p-3">
                 <div className="row">
                     <div className="container-fluid col-lg-12 col-md-12 col-sm-12">
                         <Routes>
