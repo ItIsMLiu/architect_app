@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { imgSize } from '../../settingsInspo';
+import { imgSize } from '../../APISettingsInspo';
 
 const Photo = ({ photo }) => {
   const url = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_${imgSize}.jpg`;
