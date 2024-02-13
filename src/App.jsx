@@ -1,3 +1,4 @@
+//App.jsx
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -16,18 +17,18 @@ import Contactmodal from './components/Modal.jsx';
 
 function App() {
   return (
-  <Router>
-    <Header />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/architecture-app/services/*" element={<Services />} />
-      <Route path="/architecture-app/inspiration" element={<Inspiration />} />
-      <Route path="/architecture-app/about" element={<About />} />
-      <Route path="/architecture-app/contact" element={<Contact />} />
-    </Routes>
-    <Contactmodal />
-    <Footer />
-  </Router>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/architecture-app/services/*" element={<Services />} />
+        <Route path="/architecture-app/inspiration/*" element={<Inspiration />} />
+        <Route path="/architecture-app/about" element={<About />} />
+        <Route path="/architecture-app/contact" element={<Contact />} />
+      </Routes>
+      <Contactmodal />
+      <Footer />
+    </Router>
   )
 }
 
