@@ -1,0 +1,19 @@
+.architecture {
+  scroll-margin-top: 5rem;
+}
+
+.night-view {
+  max-width: 800px;
+}
+
+.interiorSlider {
+  max-width: 800px;
+}
+
+img-comparison-slider {
+  max-width: 800px;
+  align-self: center;
+  --divider-width: 2px;
+  --divider-color: #EBE9E4;
+  --default-handle-opacity: 1;
+}

@@ -1,19 +1,44 @@
 import React from 'react';
-import "../style/About.css"
+import { Route, Routes } from 'react-router-dom';
+import ServiceOption from './ServiceOption';
+import services from '../services.json'
+import "../style/Services.css"
 import "../style/Global.css"
+import ArchServices from './ArchServices';
+import InteriorServices from './InteriorServices';
 
 function Services() {
   return <>
-    <div className="container">
-        <div className="row">
-            <div className="col-sm-12 col-lg-12 col-md-12">
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title">Services</h5>
-                        <p className="card-text"></p>
+    <div className="container-fluid servicesContent">
+        <div className="row" >
+            <div className="container-fluid col-lg-12 col-md-12 col-sm-12">
+                <h1>Services</h1>
+                <p>Explore our architectural and interior services. Click on each option to learn more.</p>
+            </div>
+            <div className="container-fluid col-lg-12 col-md-12 col-sm-12">
+                <div className="row">
+                    <ServiceOption 
+                        title = {services[0].title}
+                        image = {services[0].image}
+                        page = {services[0].page}
+                    />
+                    <ServiceOption 
+                        title = {services[1].title}
+                        image = {services[1].image}
+                        page = {services[1].page}
+                    />
+                </div>
+            </div>
+            <div className="container-fluid col-lg-12 col-md-12 col-sm-12">
+                <div className="row">
+                    <div className="container-fluid col-lg-12 col-md-12 col-sm-12">
+                        <Routes>
+                            <Route path="archservices" element={<ArchServices />} />
+                            <Route path="interiorservices" element={<InteriorServices />} />
+                        </Routes>
                     </div>
                 </div>
-            </div>         
+            </div>
         </div>
     </div>
   </>

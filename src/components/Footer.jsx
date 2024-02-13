@@ -10,8 +10,7 @@ function Footer() {
                 <div className="col-sm-12 col-lg-12 col-md-12">
                     <div className="card">
                         <div className="card-body">
-                            <h5 className="card-title">Pin Up Studio</h5>
-                            <a href="mailto:xxxx@outlook.com" className="btn btn-primary">Email Now!</a>
+                            <h5 className="card-title"><i>ZenArch</i></h5>
                         </div>
                     </div>
                 </div>
