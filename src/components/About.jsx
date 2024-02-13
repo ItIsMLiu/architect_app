@@ -11,13 +11,12 @@ function About() {
       <Row className='p-3'>
         <Col sm={12}><h1>About</h1></Col>
       </Row>
-      <Row className='p-3 d-flex align-items-end'>
-        <Col sm={12} lg={6} className='p-3'>
-          <img src='/about.png' className="card-img mx-auto d-block" alt="Rear of house and garden"></img>
+      <Row className='p-3 d-flex align-items-center'>
+        <Col md={12} lg={6} className='p-3'>
+          <img src='/about.png' className="card-img mx-auto d-block" alt="Front of house and garden"></img>
         </Col>
-        <Col sm={12} lg={6} className='p-3'>
-          <h3 className='p-3'>We would love to hear about your project, and how we can help.</h3>
-          <p className='p-3'>Don't hesitate to send us a message using the form or contact details below. Thank you for your interest!</p>
+        <Col md={12} lg={6} className='p-3'>
+          <p className='p-3'>Welcome to ZenArch, we're a passionate team of architects and designers dedicated to creating spaces that inspire and endure.With a focus on collaboration and sustainability, we work closely with clients to bring their visions to life. From residential to commercial projects, we blend creativity with practicality to deliver exceptional results.</p>
         </Col>
       </Row>
     </Container>
