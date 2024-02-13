@@ -14,10 +14,8 @@
     width: auto;
 }
 
-.img-link:hover {
-    .card-img {
+.img-link:hover .card-img {
         filter: none !important;
-    }
 }
 
 .card-img-overlay {
