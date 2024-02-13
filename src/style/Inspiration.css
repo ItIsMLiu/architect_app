@@ -30,22 +30,6 @@ p {
     margin: 0;
 }
 
-.btn-primary:hover,
-.btn-primary:active {
-    background: var(--colour4);
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
-
-button a {
-    color: var(--colour2);
-    text-decoration: none;
-}
-
-button a:active {
-    color: var(--colour3);
-}
 
 .card {
     padding: 10px;
@@ -98,9 +82,14 @@ mark {
 }
 
 .main-nav a {
-    background: var(--colour1) linear-gradient(130deg, var(--colour1) 0%, var(--colour3) 80%);
-    border-radius: 100px;
-    box-shadow: .25rem .25rem .5rem 0 hsl(0deg 0% 0% / 80%);
+    text-decoration: none;
+    background-color: var(--colour3) !important;
+    border: var(--colour3) !important;
+    border-radius: 0 !important;
+    --bs-btn-active-color: var(--colour3) !important;
+    --bs-btn-active-bg: var(--colour2) !important;
+    --bs-btn-active-border-color: var(--colour2) !important;
+
     color: #fff;
     display: block;
     font-size: 18px;
@@ -111,14 +100,13 @@ mark {
 }
 
 .main-nav a:hover {
-    background: var(--colour3) linear-gradient(130deg, var(--colour3) 0%, var(--colour4) 80%);
+    background: var(--colour4) !important;
+    color: var(--colour2) !important;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset !important;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset !important;
 }
 
-.main-nav .active {
-    background-color: var(--colour1);
-    box-shadow: .15rem .15rem .5rem 0 hsl(0deg 0% 0% / 30%), inset 0 0 1px 2px hsl(0deg 0% 100% / 100%);
-    pointer-events: none;
-}
 
 .photo-container ul,
 .photo-list ul {
@@ -265,11 +253,14 @@ mark {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-footer {
+.disclaimer {
     text-align: center;
     color: black;
     height: auto;
@@ -277,6 +268,6 @@ footer {
 }
 
 
-footer a {
+.disclaimer a {
     color: var(--colour1);
 }
