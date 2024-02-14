@@ -23,7 +23,6 @@ npx create-react-app Architecture_App
 
 ## Technologies
 - getfrom
-- img-comparison-slider
 - react-bootstrap
 
 ## Key Features
@@ -50,6 +49,9 @@ npx create-react-app Architecture_App
 
 ## Link to deployed Application
 [ZenArch APP](https://65cd1975ecf95f02c83470b9--sparkling-sherbet-b40e86.netlify.app/)
+
+## Challenges
+
 
 ## Credits
 This app has been created as a group project by **By Ibrahim, Khadijah, Min & Oxana** for the edEX Front-End Development Bootcamp. 
