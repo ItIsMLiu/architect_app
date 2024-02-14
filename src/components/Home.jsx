@@ -1,14 +1,16 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-
-import "../style/Home.css"
-import "../style/Global.css"
+import ImageCollage from "./ImageCollage";
+import { NavLink } from "react-bootstrap";
 
 function Home() {
   return <>
-    <div className="mb-4">
-      <div className="container-fluid hero">
-      
+    <div className="mb-0" style={{
+      marginBottom: 0
+    }}>
+      <div className="container-fluid hero" style={{
+        paddingLeft: 0,
+        paddingRight: 0
+      }}>
+        <ImageCollage />
       </div>
     </div>
       
