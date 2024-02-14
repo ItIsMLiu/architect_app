@@ -1,4 +1,3 @@
-// LayoutInspo.jsx
 import { Outlet } from 'react-router-dom';
 import Search from './Search';
 import Nav from './NavInspo';

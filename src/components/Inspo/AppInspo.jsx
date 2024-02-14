@@ -1,5 +1,3 @@
-// AppInspo.jsx
-/* eslint-disable import/no-cycle */
 import { Route, Routes } from 'react-router-dom';
 import Layout from './LayoutInspo';
 import { Error404 } from './ErrorPages';

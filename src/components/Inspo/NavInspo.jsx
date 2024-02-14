@@ -1,23 +1,24 @@
-// NavInspo.jsx
 import { NavLink } from 'react-router-dom';
 import { defaultTags } from '../../APISettingsInspo';
 import '../../style/Global.css';
 
+// Nav component with predefined search tags
 const Nav = () => {
-  // Make sure there's no duplicates in defaultTags
+  // Ensure there are no duplicate tags in the defaultTags array
   const uniqueTags = [...new Set(defaultTags)];
 
-  // Use defaultTags from App settings to generate buttons
+  // Generate NavLink elements for each unique tag
   const tagLinks = uniqueTags.map((tagTerm) => (
     <li key={tagTerm}>
-      {/* For the 'to' url, replace any spaces with + in tagTerm */}
+      {/* For the 'to' URL, replace any spaces with '+' in tagTerm */}
       <NavLink to={`/architecture-app/inspiration/${tagTerm.trim().replace(/\s/g, '+')}`}>
-        {/* Make the tag Title Case */}
+        {/* Convert the tagTerm to Title Case */}
         {tagTerm.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase())}
       </NavLink>
     </li>
   ));
 
+  // Render the navigation bar with the generated tag links
   return (
     <nav className="main-nav">
       <ul>
@@ -26,6 +27,7 @@ const Nav = () => {
     </nav>
   );
 };
+
 
 export default Nav;
 

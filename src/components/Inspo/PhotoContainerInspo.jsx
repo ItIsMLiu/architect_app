@@ -14,13 +14,14 @@ import PhotoList from './PhotoListInspo';
 import '../../style/Inspiration.css';
 import Title from './TitleInspo';
 
+// PhotoContainer component fetches and displays photos based on a search term
 const PhotoContainer = () => {
   const [photosData, setPhotosData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const { searchTerm } = useParams();
 
-  // Replace any plus signs with spaces
+  // Replace any plus signs with spaces in the search term
   const humanizedPhrase = searchTerm.trim().replace(/\+/g, ' ');
 
   useEffect(() => {
@@ -29,8 +30,7 @@ const PhotoContainer = () => {
     const getPhotoData = async (q) => {
       if (!q) return {};
 
-      // Test connectiom to a network.
-
+      // Check if the browser is online
       if (!navigator.onLine) {
         setError('Browser not connected to network.');
         setIsLoading(false);
@@ -53,7 +53,7 @@ const PhotoContainer = () => {
           return {};
         })
         .catch((err) => {
-          // If API url is incorrect.
+          // Handle errors, e.g., incorrect API endpoint
           setError(`${err.message}: Check the API endpoint.`);
         })
         .finally(() => {
@@ -70,21 +70,22 @@ const PhotoContainer = () => {
       }
     };
 
-    // Check if query results are already in sessionStorage
     const getPhotos = async () => {
       if (sessionStorage.getItem(humanizedPhrase) !== null) {
+        // Retrieve and use data from sessionStorage if available
         const storedData = sessionStorage.getItem(humanizedPhrase);
         const storedDataLength = JSON.parse(storedData).length;
         if (storedDataLength === apiArgs.per_page) {
           setPhotosData(JSON.parse(storedData));
         } else {
+          // Fetch new data from the API if the stored data is incomplete
           const results = await getPhotoData(humanizedPhrase);
           setPhotosData(results.data.photos.photo);
           // Save query result in sessionStorage
           sessionStorage.setItem(humanizedPhrase, JSON.stringify(results.data.photos.photo));
         }
       } else {
-        // Get data from API
+        // Get data from API if not available in sessionStorage
         const results = await getPhotoData(humanizedPhrase);
         if (results) {
           handleResponse(results);
@@ -92,12 +93,15 @@ const PhotoContainer = () => {
       }
     };
 
+    // Fetch and handle photo data
     getPhotos().then(() => {
       setIsLoading(false);
     });
   }, [humanizedPhrase, searchTerm]);
 
+  // Render loading spinner while fetching data
   if (isLoading) return <Loading />;
+  // Render error message and details if there's an error
   if (error) {
     return (
       <>
@@ -107,12 +111,18 @@ const PhotoContainer = () => {
     );
   }
 
+  // Render the Title and PhotoList components with fetched data
   return (
     <>
       <Title phrase={searchTerm} />
       <PhotoList photosData={photosData} />
     </>
   );
+};
+
+// Prop types for the PhotoContainer component
+PhotoContainer.propTypes = {
+  searchTerm: PropTypes.string,
 };
 
 export default PhotoContainer;
