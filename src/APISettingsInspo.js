@@ -21,7 +21,10 @@ export const imgSize = 'n';
 export const searchPlaceholder = 'architecture design';
 
 export const defaultTags = [
-  'house extension',
-  'house remodelling',
-  'modern architecture'
+  'roof extension',
+  'kitchen extension',
+  'modern houses',
+  'barn conversion',
+  'attic conversion',
+  'eco houses'
 ];

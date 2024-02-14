@@ -11,10 +11,10 @@ const Title = ({ phrase }) => {
   document.title = `${headline} "${humanizedTerm}"`;
 
   return (
-    <h2>
+    <h3>
       {headline}
-      <mark data-testid="highlight">{humanizedTerm}</mark>
-    </h2>
+      <mark data-testid="highlight" className='highlight'>{humanizedTerm}</mark>
+    </h3>
   );
 };
 

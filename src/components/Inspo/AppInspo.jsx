@@ -4,8 +4,9 @@ import { Route, Routes } from 'react-router-dom';
 import Layout from './LayoutInspo';
 import { Error404 } from './ErrorPages';
 import PhotoContainer from './PhotoContainerInspo';
+import '../../style/Inspiration.css'
 
-const App = () => (
+const Inspiration = () => (
   <Routes>
     <Route path="/" element={<Layout />}>
       <Route
@@ -20,4 +21,4 @@ const App = () => (
   </Routes>
 );
 
-export default App;
+export default Inspiration;
