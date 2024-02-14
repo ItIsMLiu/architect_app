@@ -3,7 +3,9 @@ import { NavLink } from "react-bootstrap";
 
 function Home() {
   return <>
-    <div className="mb-4">
+    <div className="mb-0" style={{
+      marginBottom: 0
+    }}>
       <div className="container-fluid hero" style={{
         paddingLeft: 0,
         paddingRight: 0
