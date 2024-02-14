@@ -16,7 +16,7 @@ export const apiArgs = {
   per_page: 48
 };
 
-export const imgSize = 'n';
+export const imgSize = 'b';
 
 export const searchPlaceholder = 'architecture design';
 

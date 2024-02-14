@@ -2,16 +2,6 @@ a {
     text-decoration: none;
 }
 
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    margin-top: auto;
-}
-
 h1,
 h2,
 h3 {
@@ -54,6 +44,10 @@ ul {
     grid-template-columns: 1fr 1fr;
     margin: 0 0;
     padding: 0;
+}
+
+.App {
+    align-self: center;
 }
 
 .main-nav li {
