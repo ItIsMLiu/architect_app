@@ -115,8 +115,4 @@ const PhotoContainer = () => {
   );
 };
 
-PhotoContainer.propTypes = {
-  phrase: PropTypes.string.isRequired
-};
-
 export default PhotoContainer;
