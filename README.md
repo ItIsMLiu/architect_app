@@ -50,6 +50,9 @@ npx create-react-app Architecture_App
 8. Netlify 
 9. READ ME creation
 
+## License
+- MIT License
+- 
 ## Link to deployed Application
 [ZenArch APP](https://65cd1975ecf95f02c83470b9--sparkling-sherbet-b40e86.netlify.app/)
 
