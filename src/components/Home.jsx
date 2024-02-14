@@ -4,7 +4,10 @@ import { NavLink } from "react-bootstrap";
 function Home() {
   return <>
     <div className="mb-4">
-      <div className="container-fluid hero">
+      <div className="container-fluid hero" style={{
+        paddingLeft: 0,
+        paddingRight: 0
+      }}>
         <ImageCollage />
       </div>
     </div>
