@@ -13,16 +13,16 @@ function ArchServices() {
     }, [location]);
 
     return (
-        <div ref={architectureRef} className="architecture container-fluid col-lg-12 col-md-12 col-sm-12">
+        <div ref={architectureRef} className="architecture container-fluid col-lg-12 col-md-12 col-sm-12 p-3">
             <div className="row">
                 <div className='text-center'>
                     <h2>Architectural Services</h2>
                     <p>Feasibility to Building Regs (RIBA Stage 0-4)</p>
                 </div>
-                <div className="card col-lg-12 col-md-12 col-sm-12 img-link">
+                <div className="card col-lg-12 col-md-12 col-sm-12 img-link p-3">
                     <img src="/arch-services.jpg" className="card-img night-view mx-auto d-block" alt="Architectural Services" />
                 </div>
-                <div className="card col-lg-12 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
+                <div className="card col-lg-12 col-md-12 col-sm-12 d-flex align-items-center justify-content-center p-3">
                     <ul>What we can assist you with:
                         <li>Conducting property measurements and surveys.</li>
                         <li>Creating feasibility studies and identifying potential limitations.</li>
