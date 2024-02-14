@@ -3,15 +3,20 @@ import { NoResults } from './ErrorPages';
 import Photo from './PhotoInspo';
 import '../../style/Inspiration.css';
 
+
 const PhotoList = ({ photosData }) => {
+  // Check if there are photos in the data
   if (photosData && photosData.length > 0) {
+    // Map over each photo in the data and create a Photo component for each
     const photos = photosData.map((photo) => (
       <Photo
         key={photo.id}
         photo={photo}
-        imgSize="m"
+        imgSize="n"  // Pass the imgSize prop with a default value of "n"
       />
     ));
+
+    // Render a section with an unordered list containing the photos
     return (
       <section className="photo-list">
         <ul>
@@ -20,6 +25,8 @@ const PhotoList = ({ photosData }) => {
       </section>
     );
   }
+
+  // If there are no photos, render a section with a NoResults component
   return (
     <section className="photo-list">
       <NoResults />
@@ -27,6 +34,7 @@ const PhotoList = ({ photosData }) => {
   );
 };
 
+// Define prop types for the 'photosData' prop to ensure correct data structure
 PhotoList.propTypes = {
   photosData: PropTypes.arrayOf(PropTypes.shape({
     farm: PropTypes.number.isRequired,
@@ -41,4 +49,6 @@ PhotoList.propTypes = {
   })).isRequired
 };
 
+
 export default PhotoList;
+

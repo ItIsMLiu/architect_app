@@ -1,4 +1,3 @@
-//Disclaimer
 const Disclaimer = () => (
   <div className="disclaimer">
     <p>Images are sourced from Flickr. Image owners retain all intellectual property rights on their content. </p>

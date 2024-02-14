@@ -1,4 +1,3 @@
-//ErrorPages.jsx
 import '../../style/Inspiration.css';
 
 const Error404 = () => (

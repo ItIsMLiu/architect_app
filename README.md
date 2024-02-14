@@ -1,5 +1,5 @@
 # ZenArch
-A web application that provides information, inspiration and Architectural design services. The user can browse the App for inspiration, navigate through the gallery to view before and after pictures for previous projects. Aawell as, make an enquiry regarding the services. 
+A web application that provides information, inspiration and Architectural design services. The user can browse the App for inspiration, navigate through the gallery to view before and after pictures for previous projects. As well as, make an enquiry regarding the services. 
 
 The React.js code uses functions to handle user interactions and update the content on the screen. 
 
@@ -13,18 +13,20 @@ npx create-react-app Architecture_App
 - [Link to Application](#link-to-deployed-application)
 - [Final result](#final-result)
 
-## NPM packages
+## Technologies
+- getfrom (POST routs for adding data)
+- react-bootstrap
+- Node.js
 
+#### Library 
+- React.js
+
+#### NPM packages
 - img-comparison-slider
 - tailwindCSS
 
-## APIs 
-- Flicker
-
-## Technologies
-- getfrom
-- img-comparison-slider
-- react-bootstrap
+#### APIs 
+- Flicker(GET routes for retrieving new data)
 
 ## Key Features
 - Gallery
@@ -51,10 +53,14 @@ npx create-react-app Architecture_App
 ## Link to deployed Application
 [ZenArch APP](https://65cd1975ecf95f02c83470b9--sparkling-sherbet-b40e86.netlify.app/)
 
+
 ## Credits
 This app has been created as a group project by **By Ibrahim, Khadijah, Min & Oxana** for the edEX Front-End Development Bootcamp. 
 
+## Challenges
+On the contact from, after sending messages it does not redirect to page and shows error. This issue does not rise locally, 
+
 ## [Github](https://github.com/Kjhohura24/Architecture_App)
 
-## Final result - Desktop & Mobile
+## Final result - Desktop
 ![Website](src/assets/final.png)

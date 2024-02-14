@@ -1,34 +1,38 @@
-// Search.jsx
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { searchPlaceholder } from '../../APISettingsInspo';
 import '../../style/Inspiration.css';
-import Title from './TitleInspo';
-import PhotoContainer from './PhotoContainerInspo';
 
+// Manual search
 const Search = () => {
   const [searchPhrase, setSearchPhrase] = useState('');
   const navigate = useNavigate();
 
+  // Handle input change in the search bar
   const handleChange = (ev) => {
     setSearchPhrase(ev.target.value);
   };
 
+  // Handle form submission
   const handleSubmit = (ev) => {
     ev.preventDefault();
+    // Sanitize the search phrase, replacing special characters and spaces with '+'
     const sanitizedPhrase = searchPhrase.trim().replace(/[^\w ]/g, '').replace(/\s/g, '+');
+    // Navigate to the search results page with the sanitized phrase
     navigate(`/architecture-app/inspiration/${sanitizedPhrase}`);
   };
 
-
   return (
     <>
+      {/* Header section */}
       <header>
         <h1>
           Would you like some architectural inspiration?
         </h1>
       </header>
+      {/* Main content section */}
       <main>
+        {/* Search form with input, button, and SVG icon */}
         <form className="search" onSubmit={handleSubmit}>
           <input
             type="search"
@@ -51,5 +55,5 @@ const Search = () => {
   );
 };
 
-export default Search;
 
+export default Search;
